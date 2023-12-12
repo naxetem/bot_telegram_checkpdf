@@ -34,14 +34,6 @@ NombreCarpeta1,http://www.url1.com
 
 NombreCarpeta2,http://www.url2.com
 
-## Seguridad
-- **Verificación SSL**: Por defecto, las solicitudes HTTP no verifican el SSL. Esto puede ser riesgoso. Considera habilitar la verificación SSL o manejar de forma adecuada los certificados.
-- **Manejo de Errores**: Asegúrate de agregar manejo de errores adecuado para evitar fallas durante la ejecución del script.
-
-## Personalización y Expansión
-- **Filtrado de PDFs**: Actualmente, el script descarga todos los PDFs encontrados. Puedes modificarlo para que descargue solo ciertos PDFs según tus necesidades.
-- **Soporte para Más Formatos**: Si necesitas descargar otros tipos de archivos además de PDFs, puedes modificar el script para soportar más formatos.
-
 ## Contribuciones y Soporte
 Este proyecto es de código abierto y las contribuciones son bienvenidas. Si encuentras un problema o tienes una sugerencia, no dudes en abrir un issue o un pull request en el repositorio de GitHub.
 
