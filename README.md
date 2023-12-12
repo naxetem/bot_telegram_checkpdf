@@ -1,31 +1,25 @@
-# PDF Download and Telegram Send Automation
+# Automatización de Descarga y Envío de PDFs a través de Telegram
 
-## Description
-This project consists of a Python script that automatically performs the following tasks:
-1. Reads URLs and folder names from a text file.
-2. For each URL, downloads all the PDF files found on the page.
-3. Saves each PDF in a specific folder on the server/local machine.
-4. Sends the downloaded PDFs to a specific Telegram chat using a bot.
+## Descripción
+Este proyecto consiste en un script de Python que realiza automáticamente las siguientes tareas:
+1. Lee URLs y nombres de carpetas de un archivo de texto.
+2. Para cada URL, descarga todos los archivos PDF encontrados en la página.
+3. Guarda cada PDF en una carpeta específica en el servidor/local.
+4. Envía los PDFs descargados a un chat de Telegram mediante un bot.
 
-## How It Works
-- **Data Loading**: The script reads a `webs.txt` file containing pairs of folder names and URLs, separated by commas.
-- **PDF Download**: For each URL, the script searches for links to PDF files and downloads them to the corresponding folder.
-- **Telegram Sending**: Each downloaded PDF file is automatically sent to a specific Telegram chat through a bot.
+## Cómo Funciona
+- **Carga de Datos**: El script lee un archivo `webs.txt` que contiene pares de nombre de carpeta y URL separados por comas.
+- **Descarga de PDFs**: Para cada URL, el script busca enlaces a archivos PDF y los descarga en la carpeta correspondiente.
+- **Envío a través de Telegram**: Cada archivo PDF descargado se envía automáticamente a un chat de Telegram específico mediante un bot.
 
-## Requirements
-To run this script, you will need:
+## Requisitos
+Para ejecutar este script, necesitarás:
 - Python 3.x
-- Python Libraries: `requests`, `bs4` (BeautifulSoup), `os`, `urllib`, `telebot`, `dotenv`.
-- A `.env` file with `TELEBOT_TOKEN` and `CHAT_ID` set for the Telegram bot.
-- A `webs.txt` file with the folder names and URLs.
+- Bibliotecas de Python: `requests`, `bs4` (BeautifulSoup), `os`, `urllib`, `telebot`, `dotenv`.
+- Un archivo `.env` con las variables `TELEBOT_TOKEN` y `CHAT_ID` configuradas para el bot de Telegram.
+- Un archivo `webs.txt` con los nombres de las carpetas y las URLs.
 
-## Installation and Execution
-1. **Dependency Installation**: Ensure you have all the necessary libraries installed.
-2. **`.env` File Setup**: Create a `.env` file in the same directory as the script with the required variables.
-3. **Preparing `webs.txt`**: Create and fill the `webs.txt` file with folder names and URLs.
-4. **Script Execution**: Run the script in your Python environment.
-
-## Additional Notes
-- The script does not verify SSL certificates (`verify=False` in HTTP requests), which can be risky for non-secure URLs.
-- Ensure you have the appropriate permissions to download and send the PDF files.
-- The Telegram bot must be properly set up and have permission to send messages to the specified `CHAT_ID`.
+## Instalación y Ejecución
+1. **Instalación de Dependencias**: Asegúrate de tener todas las bibliotecas necesarias instaladas.
+2. **Configuración del Archivo `.env`**: Crea un archivo `.env` en el mismo directorio del script con las variables requeridas.
+3. **Preparación de `webs.txt`**: Crea y rellena el archivo `webs.txt` con los nombres de las
