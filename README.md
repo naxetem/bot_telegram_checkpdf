@@ -30,7 +30,8 @@ El archivo `webs.txt` debe tener la siguiente estructura:
 
 Cada línea representa una fuente de PDFs, con un nombre de carpeta y una URL separados por una coma.
 
-NombreCarpeta1,http://www.url1.com
+NombreCarpeta1,http://www.url1.com  
+
 NombreCarpeta2,http://www.url2.com
 
 ## Seguridad
